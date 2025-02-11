@@ -1,6 +1,6 @@
 
-export default function add(string:string):number{
+export default function add(numbers:string):number{
 
-    return 0;
+    return numbers ===""?0: NaN;
 
 }
