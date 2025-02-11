@@ -15,3 +15,7 @@ test("returns the sum of numbers separated by comma",()=>{
 test("handles new line as delimitter",()=>{
     expect(add("1\n2,3")).toBe(6)
 })
+
+test("Supports custom delimitters",()=>{
+    expect(add("//;\n1;3")).toBe(4)
+})
