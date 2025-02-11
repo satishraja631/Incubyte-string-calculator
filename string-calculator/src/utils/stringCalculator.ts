@@ -1,6 +1,8 @@
 
 export default function add(numbers:string):number{
 
-    return numbers ===""?0: NaN;
+    if(numbers==="") return 0;
+
+    return parseInt(numbers,10);
 
 }
