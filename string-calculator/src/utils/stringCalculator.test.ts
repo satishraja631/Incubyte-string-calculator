@@ -11,3 +11,7 @@ test("returns the number itself for a single number string",()=>{
 test("returns the sum of numbers separated by comma",()=>{
     expect(add("1,2,4")).toBe(7);
 })
+
+test("handles new line as delimitter",()=>{
+    expect(add("1\n2,3")).toBe(6)
+})
